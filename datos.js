@@ -59,15 +59,15 @@ const baseDatosProblemas = {
             </div>
             <div class='paso'>
                 <strong>b) Velocidad menor y mayor:</strong><br>
-                El móvil con la velocidad menor es el móvil D, ya que su pendiente es la más baja en el gráfico. El móvil con la velocidad mayor es el móvil B, ya que su pendiente es la más alta.
+                El móvil con la velocidad menor es el móvil D, ya que su pendiente es negativa, la más baja en el gráfico. El móvil con la velocidad mayor es el móvil C, ya que su pendiente es la más alta.
             </div>
             <div class='paso'>
                 <strong>c) Móvil que avanza hacia el origen:</strong><br>
-                El móvil C avanza hacia el origen, ya que su posición disminuye con el tiempo, lo que indica que se está moviendo en dirección opuesta al origen.
+                El móvil D avanza hacia el origen, ya que su posición disminuye con el tiempo, lo que indica que se está moviendo en dirección opuesta al origen.
             </div>
             <div class='paso'>
                 <strong>d) Móviles con velocidad parecida:</strong><br>
-                Los móviles A y D se desplazan con velocidades parecidas, ya que sus pendientes son similares en el gráfico, lo que indica que recorren distancias similares en intervalos de tiempo similares.
+                Los móviles A y C se desplazan con velocidades parecidas, ya que sus pendientes son similares en el gráfico, lo que indica que recorren distancias similares en intervalos de tiempo similares.
             </div>
                
             `
