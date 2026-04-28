@@ -256,55 +256,66 @@ const baseDatosProblemas = {
     ],
     "ficha3": [
         {
-            titulo: "Problema 1: Muelle vertical",
-            enunciado: "Al colgar un cuerpo de 10 kg de un muelle vertical se produce un alargamiento de 7,2 cm. Calcula: <br> </>a) La constante elástica del muelle. <br> b) La energía potencial elástica almacenada.",
+            titulo: "Problema 1: Coche en una carretera recta con aceleración constante",
+            enunciado: "Un coche se mueve con velocidad constante a 100 km/h por una carretera recta. Si comienza a acelerar durante 15 segundos su velocidad sube a 120 km/h. ¿Cuál ha sido su aceleración? ¿Y el espacio recorrido?",
+            solucion: `<div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad inicial (\\(v_0\\)) = 100 km/h <br>
+                Velocidad final (\\(v_f\\)) = 120 km/h <br>
+                Tiempo (\\(t\\)) = 15 s <br>
+                <strong>1. Cálculo de la aceleración:</strong><br>
+                Primero, convertimos las velocidades a m/s: &nbsp \\(v_0 = 100 \\\ \\frac {km}{h} \\cdot  \\frac{1000}{3600} = 27,8 \\text{ m/s}\\) y \\(v_f = 120 \\\ \\frac {km}{h} \\cdot \\frac{1000}{3600} = 33,3 \\text{ m/s}\\). Luego, utilizamos la fórmula de la aceleración: \\(a = \\frac{v_f - v_0}{t}\\) y sustituimos datos. <br>
+                \\[a = \\frac{33,3 - 27,8}{15} = 0,367 \\text{ m/s}^2\\]
+                <span class='resultado'>Resultado: &nbsp La aceleración es de 0,367 m/s².</span>
+            </div>
+            <div class='paso'>
+                <strong>2. Cálculo del espacio recorrido:</strong><br>
+                Utilizamos la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\).<br>
+                \\[x = 27,8 \\cdot 15 + \\frac{1}{2} \\cdot 0,367 \\cdot (15)^2 = 417 + 41,06 = 458,06 \\text{ m}\\]
+                <span class='resultado'>Resultado: &nbsp El espacio recorrido es de 458,06 metros.</span>
+            </div>
+            ` 
+        },
+        {
+            titulo: "Problema 2: Atleta corriendo con aceleración constante",
+            enunciado: "Un atleta está corriendo por la pista a una velocidad de 3 m/s. En el momento final de la carrera hace un sprint con una aceleración de 1 m/s<sup>2</sup>. ¿Cuál será su velocidad al cabo de 5 s? ¿Y cuánto es el espacio recorrido en ese tiempo?",
             solucion: `
+                <div class='paso'>
+                    <strong>Datos:</strong> <br>
+                    Velocidad inicial (\\(v_0\\)) = 3 m/s <br>
+                    Aceleración (\\(a\\)) = 1 m/s² <br>
+                    Tiempo (\\(t\\)) = 5 s <br>
+                    <strong>1. Cálculo de la velocidad al cabo de 5 segundos:</strong><br>
+                    Utilizamos la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\).<br>
+                    \\[v = 3 + 1 \\cdot 5 = 8 \\text{ m/s}\\]
+                    <span class='resultado'>Resultado: &nbsp La velocidad al cabo de 5 segundos es de 8 m/s.</span>
+                </div>
+                <div class='paso'>
+                    <strong>2. Cálculo del espacio recorrido en ese tiempo:</strong><br>
+                    Utilizamos la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\).<br>
+                    \\[x = 3 \\cdot 5 + \\frac{1}{2} \\cdot 1 \\cdot (5)^2 = 15 + 12,5 = 27,5 \\text{ m}\\]
+                    <span class='resultado'>Resultado: &nbsp El espacio recorrido en ese tiempo es de 27,5 metros.</span>
             `
         },
         {
-            titulo: "Problema 2: Energía elástica y rozamiento",
-            enunciado: "Un resorte de constante K = 4000 N/m se comprime una distancia de 0,4 m. Se apoya en él un objeto de 6 kg de masa. Se suelta el muelle y el objeto es lanzado en una superficie horizontal en la que la fuerza de rozamiento vale 27 N. Calcular: <br> a) la velocidad con que sale lanzado el objeto. <br> b) la distancia que recorre el objeto antes de pararse.",
+            titulo: "Problema 3: Coche en Barcelona con aceleración constante",
+            enunciado: "Un coche sale de Barcelona con una velocidad de 80 km/h. Se pone a acelerar y a los 10 segundos llega a una velocidad de 100 km/h recorriendo 0,25 km. Vuelve a acelerar y se coloca en una velocidad de 110 km/h en 5 segundos recorriendo 0,5 km. Calcula las posiciones en los diferentes momentos del movimiento y representa las gráficas s-t y v-t.",
             solucion: `
                 <div class='paso'>
-                    <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
-                    La energía potencial elástica almacenada en el muelle se transforma íntegramente en energía cinética (suponiendo que el muelle se suelta en el punto de equilibrio):<br>
-                    \\[E_{pe} = \\frac{1}{2} \\cdot K \\cdot x^2 = \\frac{1}{2} \\cdot 4000 \\cdot (0,4)^2 = 320 \\text{ J}\\]
-                    Igualamos a la energía cinética (\\(E_c = \\frac{1}{2} \\cdot m \\cdot v^2\\)) para despejar la velocidad:<br>
-                    \\[320 = \\frac{1}{2} \\cdot 6 \\cdot v^2 \\implies v^2 = \\frac{320}{3} \\implies v = \\sqrt{106,67} \\approx 10,33 \\text{ m/s}\\]
-                    <span class='resultado'>Resultado: &nbsp \\(v \\approx 10,3 \\text{ m/s}\\)</span>
+                    <strong>Datos:</strong> <br>
+                    Velocidad inicial (\\(v_0\\)) = 80 km/h <br>
+                    Velocidad final 1 (\\(v_{f1}\\)) = 100 km/h <br>
+                    Tiempo 1 (\\(t_1\\)) = 10 s <br>
+                    Distancia 1 (\\(d_1\\)) = 0,25 km <br>
+                    Velocidad final 2 (\\(v_{f2}\\)) = 110 km/h <br>
+                    Tiempo 2 (\\(t_2\\)) = 5 s <br>
+                    Distancia 2 (\\(d_2\\)) = 0,5 km <br>
+                    <strong>1. Cálculo de las posiciones en los diferentes momentos del movimiento:</strong><br>
+                    Primero, convertimos las velocidades a m/s: \\(v_0 = 80 \\\ \\frac {km}{h} \\cdot  \\frac{1000}{3600} = 22,22 \\text{ m/s}\\), \\(v_{f1} = 100 \\\ \\frac {km}{h} \\cdot  \\frac{1000}{3600} = 27,78 \\text{ m/s}\\) y \\(v_{f2} = 110 \\\ \\frac {km}{h} \\cdot  \\frac{1000}{3600} = 30,56 \\text{ m/s}\\). Luego, calculamos la aceleración en cada tramo utilizando la fórmula de la aceleración: \\(a = \\frac{v_f - v_0}{t}\\). Para el primer tramo: \\[a_1 = \\frac{27,78 - 22,22}{10} = 0,556 \\text{ m/s}^2\\]. Para el segundo tramo: \\[a_2 = \\frac{30,56 - 27,78}{5} = 0,556 \\text{ m/s}^2\\]. Luego, calculamos las posiciones utilizando la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\). Para el primer tramo: \\[x_1 = 22,22 \\cdot 10 + \\frac{1}{2} \\cdot 0,556 \\cdot (10)^2 = 222,2 + 27,8 = 250 \\text{ m}\\]. Para el segundo tramo: \\[x_2 = 27,78 \\cdot 5 + \\frac{1}{2} \\cdot 0,556 \\cdot (5)^2 = 138,9 + 6,95 = 145,85 \\text{ m}\\]. La posición total al final del segundo tramo es la suma de las posiciones de ambos tramos: \\[x_{total} = x_1 + x_2 = 250 + 145,85 = 395,85 \\text{ m}\\].
                 </div>
                 <div class='paso'>
-                    <strong>b) Distancia hasta detenerse:</strong><br>
-                    El trabajo de la fuerza de rozamiento debe consumir toda la energía cinética del objeto hasta pararlo (\\(W_r = \\Delta E_c\\)):<br>
-                    \\[W_r = F_r \\cdot x \\implies 320 = 27 \\cdot x\\]
-                    \\[x = \\frac{320}{27} \\approx 11,85 \\text{ m}\\]
-                    <span class='resultado'>Resultado: &nbsp \\(x = 11,85 \\text{ m}\\)</span>
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 3: Conservación de la energía y choques",
-            enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
-            solucion: `
-                <div class='paso'>
-                    <strong>a) Velocidad de choque y deformación:</strong><br>
-                    La velocidad de \\(m_1\\) antes del choque se obtiene por conservación de energía mecánica:<br>
-                    \\[m_1 \\cdot g \\cdot h = \\frac{1}{2} \\cdot m_1 \\cdot v^2 \\implies v = \\sqrt{2 \\cdot g \\cdot h} = \\sqrt{2 \\cdot 9,8 \\cdot 1} \\approx 4,43 \\text{ m/s}\\]
-                    Para la deformación máxima, asumimos que tras el choque (que suele considerarse inelástico para que compriman juntos) la energía cinética del sistema se convierte en elástica. <br>
-                    Primero hallamos la velocidad del conjunto (\\(v'\\)) por conservación del momento lineal:<br>
-                    \\[m_1 \\cdot v = (m_1 + m_2) \\cdot v' \\implies 1 \\cdot 4,43 = 1,5 \\cdot v' \\implies v' \\approx 2,95 \\text{ m/s}\\]
-                    Energía cinética del conjunto = Energía elástica máxima:<br>
-                    \\[\\frac{1}{2} \\cdot (m_1 + m_2) \\cdot (v')^2 = \\frac{1}{2} \\cdot K \\cdot x^2\\]
-                    \\[\\frac{1}{2} \\cdot (1,5) \\cdot (2,95)^2 = \\frac{1}{2} \\cdot 200 \\cdot x^2 \\implies 6,52 = 100 x^2 \\implies x \\approx 0,255 \\text{ m}\\]
-                    <span class='resultado'>Resultados: &nbsp \\( v = 4,43 \\text{ m/s}\\); &nbsp \\(x = 0,255 \\text{ m}\\)</span>
-                </div>
-                <div class='paso'>
-                    <strong>b) Velocidad de ascenso y altura máxima:</strong><br>
-                    Como el enunciado indica que tras la compresión salen despedidas juntas y el rozamiento es nulo, la velocidad inicial de subida es la misma que calculamos tras el choque: \\(v' = 2,95 \\text{ m/s}\\).<br>
-                    Para la altura final (\\(h'\\)), aplicamos de nuevo conservación de energía:<br>
-                    \\[\\frac{1}{2} \\cdot M \\cdot (v')^2 = M \\cdot g \\cdot h' \\implies h' = \\frac{(v')^2}{2 \\cdot g}\\]
-                    \\[h' = \\frac{2,95^2}{2 \\cdot 9,8} = \\frac{8,70}{19,6} \\approx 0,44 \\text{ m}\\]
-                    <span class='resultado'>Resultados: &nbsp \\(v' = 2,95 \\text{ m/s}\\); &nbsp \\(h' = 0,44 \\text{ m}\\)</span>
+                    <strong>2. Representación de las gráficas s-t y v-t:</strong><br>
+                    La gráfica s-t (posición-tiempo) mostraría una curva que aumenta de manera no lineal durante el primer tramo debido a la aceleración, seguida de otra curva que también aumenta pero a un ritmo diferente durante el segundo tramo. La gráfica v-t (velocidad-tiempo) mostraría una línea que aumenta de manera lineal durante el primer tramo y luego otra línea que también aumenta de manera lineal pero con una pendiente diferente durante el segundo tramo.
                 </div>
             `
         }
