@@ -318,7 +318,122 @@ const baseDatosProblemas = {
                     La gráfica s-t (posición-tiempo) mostraría una curva que aumenta de manera no lineal durante el primer tramo debido a la aceleración, seguida de otra curva que también aumenta pero a un ritmo diferente durante el segundo tramo. La gráfica v-t (velocidad-tiempo) mostraría una línea que aumenta de manera lineal durante el primer tramo y luego otra línea que también aumenta de manera lineal pero con una pendiente diferente durante el segundo tramo.
                 </div>
             `
-        }
+        },
+        {
+            titulo: "Problema 4: Gráfica de un cuerpo en movimiento",
+            enunciado: "En el movimiento de un cuerpo se ha obtenido la siguiente gráfica: <br> a) Explica qué clase de movimiento ha tenido. <br> b) Calcula el espacio total recorrido haciendo uso de la gráfica. <br> c) Calcula las aceleraciones y dibuja la grá ca aceleración-tiempo. <br> d) Dibuja la gráfica s-t. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha3_4.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            solucion: ` <div class='paso'>
+                <strong>a) Tipo de movimiento:</strong><br>
+                El gráfico muestra una posición que aumenta de manera no lineal con el tiempo, lo que indica que el cuerpo está experimentando una aceleración constante. Por lo tanto, el movimiento es un Movimiento Rectilíneo Uniformemente Acelerado (MRUA).
+            </div>
+            <div class='paso'>
+                <strong>b) Cálculo del espacio total recorrido:</strong><br>
+                Para calcular el espacio total recorrido, podemos utilizar la fórmula del MRUA: \\[d = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\]. Sin embargo, como no se proporcionan valores específicos para la velocidad inicial (\\(v_0\\)) y la aceleración (\\(a\\)), no podemos calcular la distancia exacta sin más información.
+            </div>
+            <div class='paso'>
+                <strong>c) Cálculo de las aceleraciones y gráfica aceleración-tiempo:</strong><br>
+                Para calcular las aceleraciones, necesitamos conocer los valores de velocidad en diferentes momentos del tiempo. Sin esta información, no podemos calcular las aceleraciones ni dibujar la gráfica de aceleración-tiempo con precisión. Sin embargo, en un MRUA, la gráfica de aceleración-tiempo sería una línea horizontal que indica una aceleración constante a lo largo del tiempo.
+            </div>
+            <div class='paso'>
+                <strong>d) Gráfica s-t:</strong><br>
+                La gráfica de posición-tiempo (s-t) para un movimiento con aceleración constante es una curva que aumenta de manera no lineal. En este caso, la curva comenzaría en el origen (0,0) y se extendería hacia arriba a medida que el tiempo avanza, indicando que la posición del cuerpo aumenta de manera no lineal con el tiempo debido a la aceleración constante.   
+            
+            `
+        },
+        {
+            titulo: "Problema 5: Motorista frenando",
+            enunciado: "Un motorista que viaja a 20 m/s disminuye su velocidad a razón de 3 m/s cada segundo. ¿Cuántos metros recorre hasta que se detiene? ¿Cuál es su aceleración?",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad inicial (\\(v_0\\)) = 20 m/s <br>
+                Aceleración (\\(a\\)) = -3 m/s² <br>
+                <strong>1. Cálculo del tiempo hasta que se detiene:</strong><br>
+                Para calcular el tiempo que tarda en detenerse, utilizamos la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\). Despejamos el tiempo para cuando la velocidad final (\\(v\\)) es cero: \\[0 = 20 + (-3) \\cdot t \\Rightarrow t = \\frac{20}{3} \\approx 6,67 \\text{ s}\\].
+            </div>
+            <div class='paso'>
+                <strong>2. Cálculo de la distancia recorrida hasta que se detiene:</strong><br>
+                Utilizamos la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\). Sustituyendo los valores: \\[x = 20 \\cdot 6,67 + \\frac{1}{2} \\cdot (-3) \\cdot (6,67)^2 = 133,4 - 66,7 = 66,7 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp El motorista recorre 66,7 metros hasta que se detiene.</span>
+            </div>
+        `
+        },
+        {
+            titulo: "Problema 6: Coche aumentando su velocidad",
+            enunciado: "Un coche aumenta su velocidad desde 60 km/h a 80 km/h en un tiempo de 6 s. Calcula la aceleración, la velocidad que tendrá a los 9 s de comenzar a acelerar, si se supone que continúa con la misma aceleración, y la distancia que recorrió en los 9 s.",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad inicial (\\(v_0\\)) = 60 km/h = 16,67 m/s <br>
+                Velocidad final (\\(v\\)) = 80 km/h = 22,22 m/s <br>
+                Tiempo (\\(t\\)) = 6 s <br>
+                <strong>1. Cálculo de la aceleración:</strong><br>
+                Utilizamos la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\). Despejamos la aceleración: \\[a = \\frac{v - v_0}{t} = \\frac{22,22 - 16,67}{6} = 0,92 \\text{ m/s}^2\\].
+            </div>
+            <div class='paso'>
+                <strong>2. Cálculo de la velocidad a los 9 s:</strong><br>
+                Utilizamos la misma fórmula: \\(v = v_0 + a \\cdot t\\). Sustituyendo los valores: \\[v = 16,67 + 0,92 \\cdot 9 = 16,67 + 8,28 = 24,95 \\text{ m/s}\\].
+            </div>
+            <div class='paso'>
+                <strong>3. Cálculo de la distancia recorrida en los 9 s:</strong><br>
+                Utilizamos la fórmula del espacio recorrido: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\). Sustituyendo los valores: \\[x = 16,67 \\cdot 9 + \\frac{1}{2} \\cdot 0,92 \\cdot 9^2 = 150,03 + 33,48 = 183,51 \\text{ m}\\].
+            </div>
+
+        `
+        },
+        {
+            titulo: "Problema 7: Tren en parada",
+            enunciado: "Al acercarse a la estación, un tren va disminuyendo su velocidad desde 80 km/h hasta detenerse. Si la aceleración es de - 1,5 m/s2, ¿cuánto tiempo tardará en pararse? ¿A qué distancia de la estación empezó a frenar?",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad inicial (\\(v_0\\)) = 80 km/h = 22,22 m/s <br>
+                Aceleración (\\(a\\)) = -1,5 m/s² <br>
+                <strong>1. Cálculo del tiempo hasta que se detiene:</strong><br>
+                Utilizamos la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\). Despejamos el tiempo para cuando la velocidad final (\\(v\\)) es cero: \\[0 = 22,22 + (-1,5) \\cdot t \\Rightarrow t = \\frac{22,22}{1,5} \\approx 14,81 \\text{ s}\\].
+            </div>
+            <div class='paso'>
+                <strong>2. Cálculo de la distancia desde la estación hasta el punto donde empezó a frenar:</strong><br>
+                Utilizamos la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\). Sustituyendo los valores: \\[x = 22,22 \\cdot 14,81 + \\frac{1}{2} \\cdot (-1,5) \\cdot (14,81)^2 = 329,28 - 164,72 = 164,56 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp El tren tardará aproximadamente 14,81 segundos en detenerse y comenzó a frenar a una distancia de aproximadamente 164,56 metros de la estación.</span>       
+        `
+        },
+        {
+            titulo: "Problema 8: Aceleración de un vehículo",
+            enunciado: "Un vehículo parte del reposo y alcanza una velocidad de 72 km/h en 20s. Calcula su aceleración.",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad inicial (\\(v_0\\)) = 0 m/s <br>
+                Velocidad final (\\(v\\)) = 72 km/h = 20 m/s <br>
+                Tiempo (\\(t\\)) = 20 s <br>
+                <strong>Cálculo de la aceleración:</strong><br>
+                Utilizamos la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\). Despejamos la aceleración: \\[a = \\frac{v - v_0}{t} = \\frac{20 - 0}{20} = 1 \\text{ m/s}^2\\].<br> <span class='resultado'>Resultado: &nbsp La aceleración del vehículo es de 1 m/s².</span>
+            </div>
+        `
+        },
+        {
+            titulo: "Problema 9: Conductor de una motocicleta con aceleración constante",
+            enunciado: "El conductor de una motocicleta se encuentra un semáforo en rojo. Previamente ha empezado a reducir su velocidad con a = - 5 m/s<sup>2</sup>. Calcula la distancia que recorrerá la motocicleta hasta pararse si la velocidad inicial es de 54 km/h.",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad inicial (\\(v_0\\)) = 54 km/h = 15 m/s <br>
+                Aceleración (\\(a\\)) = -5 m/s² <br>
+                <strong>Cálculo de la distancia recorrida hasta pararse:</strong><br>
+                Utilizamos la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\). Primero, calculamos el tiempo que tarda en detenerse utilizando la fórmula de la velocidad: \\(v = v_0 + a \\cdot t\\). Despejamos el tiempo para cuando la velocidad final (\\(v\\)) es cero: \\[0 = 15 + (-5) \\cdot t \\Rightarrow t = \\frac{15}{5} = 3 \\text{ s}\\]. Luego, sustituimos el tiempo en la fórmula del espacio recorrido: \\[x = 15 \\cdot 3 + \\frac{1}{2} \\cdot (-5) \\cdot (3)^2 = 45 - 22,5 = 22,5 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp La motocicleta recorrerá una distancia de 22,5 metros hasta pararse.</span>
+            </div>
+        `
+        },
+        {
+            titulo: "Problema 10: Gráfica de un cuerpo en movimiento",
+            enunciado: "A partir de la gráfica calcula: <br> a) La aceleración. <br> b) La velocidad al cabo de 8 s. <br> c) La distancia recorrida a los 8 s. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha3_10.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            solucion: ` <div class='paso'>
+                <strong>a) Cálculo de la aceleración:</strong><br>
+                Para calcular la aceleración, necesitamos conocer los valores de velocidad en diferentes momentos del tiempo. Sin esta información, no podemos calcular la aceleración con precisión. Sin embargo, si tuviéramos los valores de velocidad en diferentes momentos, podríamos utilizar la fórmula de la aceleración: \\(a = \\frac{v_f - v_0}{t}\\) para calcular la aceleración.
+            </div>
+            <div class='paso'>
+                <strong>b) Cálculo de la velocidad al cabo de 8 segundos:</strong><br>
+                Para calcular la velocidad al cabo de 8 segundos, necesitaríamos conocer la aceleración y la velocidad inicial. Sin esta información, no podemos calcular la velocidad con precisión. Sin embargo, si tuviéramos estos datos, podríamos utilizar la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\) para calcular la velocidad al cabo de 8 segundos.
+            </div>
+            <div class='paso'>
+                <strong>c) Cálculo de la distancia recorrida a los 8 segundos:</strong><br>
+                Para calcular la distancia recorrida a los 8 segundos, necesitaríamos conocer la aceleración, la velocidad inicial y el tiempo. Sin esta información, no podemos calcular la distancia con precisión. Sin embargo, si tuviéramos estos datos, podríamos utilizar la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\) para calcular la distancia recorrida a los 8 segundos.   
+        `
+        }    
 
     ]
 };
