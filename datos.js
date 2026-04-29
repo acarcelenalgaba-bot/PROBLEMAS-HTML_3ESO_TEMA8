@@ -154,22 +154,23 @@ const baseDatosProblemas = {
             solucion: `
                 <div class='paso'>
                     <strong>1. Conversión de tiempo a horas:</strong><br>
-                    Primero, convertimos el tiempo de horas y minutos a horas decimales: \\(1 \\text{ h} 28 \\text{ min} = 1 + \\frac{28}{60} = 1,467 \\text{ h}\\).
+                    Primero, convertimos el tiempo de horas y minutos a horas decimales: \\(1 \\text{ h} \\\ 28 \\text{ min} = 1 + \\frac{28}{60} = 1,467 \\text{ h}\\).
                 </div>
                 <div class='paso'>
                     <strong>2. Cálculo de la velocidad media:</strong><br>
-                    La velocidad media se calcula como la distancia total dividida por el tiempo total: \\[v_{media} = \\frac{d}{t} = \\frac{257 \\text{ km}}{1,467 \\text{ h}} \\approx 175,2 \\text{ km/h}\\].
+                    La velocidad media se calcula como la distancia total dividida por el tiempo total: \\[v_{media} = \\frac{x}{t} = \\frac{257 \\text{ km}}{1,467 \\text{ h}} \\approx 175,2 \\text{ km/h}\\].
                     <span class='resultado'>Resultado: &nbsp \\(v_{media} \\approx 175,2 \\text{ km/h}\\)</span>
                 </div>  
             `
         },
         {
             titulo: "Problema 6: Comparación de velocidades a partir de gráficos",
-            enunciado: "Las gráficas de la figura representan el comportamiento de dos móviles. Razona cuál de ellos se mueve a mayor velocidad. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_6.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "Las gráficas de la figura representan el comportamiento de dos móviles. Razona cuál de ellos se mueve a mayor velocidad. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_6.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `
                 <div class='paso'>
                     <strong>Comparación de velocidades:</strong><br>
-                    Para comparar las velocidades de los dos móviles, debemos observar la pendiente de las gráficas de posición-tiempo. El móvil con la pendiente más pronunciada se mueve a mayor velocidad. En este caso, el móvil A tiene una pendiente más pronunciada que el móvil B, lo que indica que el móvil A se mueve a mayor velocidad que el móvil B.
+                    Para comparar las velocidades de los dos móviles, debemos observar la pendiente de las gráficas de posición-tiempo. El móvil con la pendiente más pronunciada se mueve a mayor velocidad. En este caso, el móvil B tiene una pendiente más pronunciada que el móvil A, lo que indica que el móvil B se mueve a mayor velocidad que el móvil A. <br>
+                    <span class='resultado'>Resultado: &nbsp El móvil B se mueve a mayor velocidad que el móvil A.</span>
                 </div> 
             `
         },
@@ -191,13 +192,13 @@ const baseDatosProblemas = {
                 <strong>Datos:</strong> <br>
                 Velocidad (\\(v\\)) = 30 m/s <br>
                 Tiempo (\\(t\\)) = 12 s <br>
-                Posición inicial (\\(s_0\\)) = 150 m <br>
+                Posición inicial (\\(x_0\\)) = 150 m <br>
                 <strong>1. Cálculo de la posición después de 12 segundos:</strong><br>
-                Para calcular la posición del móvil después de 12 segundos, utilizamos la fórmula de la posición para un movimiento con velocidad constante: \\[s = s_0 + v \\cdot t\\]. Sustituyendo los valores: \\[s = 150 \\text{ m} + 30 \\text{ m/s} \\cdot 12 \\text{ s} = 150 \\text{ m} + 360 \\text{ m} = 510 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp La posición del móvil después de 12 segundos es 510 m.</span>
+                Para calcular la posición del móvil después de 12 segundos, utilizamos la fórmula de la posición para un movimiento con velocidad constante: \\[x = x_0 + v \\cdot t\\] Sustituyendo los valores: \\[x = 150 \\text{ m} + 30 \\text{ m/s} \\cdot 12 \\text{ s} = 150 \\text{ m} + 360 \\text{ m} = 510 \\text{ m}\\]<br> <span class='resultado'>Resultado: &nbsp La posición del móvil después de 12 segundos es 510 m.</span>
             </div>
             <div class='paso'>
                 <strong>2. Cálculo de la distancia recorrida en 12 segundos:</strong><br>
-                La distancia recorrida por el móvil se calcula utilizando la fórmula de la distancia para un movimiento con velocidad constante: \\[d = v \\cdot t\\]. Sustituyendo los valores: \\[d = 30 \\text{ m/s} \\cdot 12 \\text{ s} = 360 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp La distancia recorrida por el móvil en 12 segundos es 360 m.</span>
+                La distancia recorrida por el móvil se calcula utilizando la fórmula de la distancia para un movimiento con velocidad constante: \\[x = v \\cdot t\\] Sustituyendo los valores: \\[x = 30 \\text{ m/s} \\cdot 12 \\text{ s} = 360 \\text{ m}\\] <br> <span class='resultado'>Resultado: &nbsp La distancia recorrida por el móvil en 12 segundos es 360 m.</span>
             </div>
              ` 
         },
@@ -209,28 +210,34 @@ const baseDatosProblemas = {
                 Velocidad (\\(v\\)) = 25 m/s <br>
                 Posición inicial (\\(s_0\\)) = 0 m <br>
                 <strong>1. Gráfica velocidad-tiempo (v-t):</strong><br>
-                La gráfica de velocidad-tiempo para un movimiento con velocidad constante es una línea horizontal. En este caso, la línea estaría a la altura de 25 m/s en el eje de velocidad, y se extendería a lo largo del tiempo. Esto indica que la velocidad del cuerpo es constante a lo largo del tiempo.
+                La gráfica de velocidad-tiempo para un movimiento con velocidad constante es una línea horizontal. En este caso, la línea estaría a la altura de 25 m/s en el eje de velocidad, y se extendería a lo largo del tiempo. Esto indica que la velocidad del cuerpo es constante a lo largo del tiempo. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_9_vt.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'>
             </div>
             <div class='paso'>
                 <strong>2. Gráfica posición-tiempo (s-t):</strong><br>
-                La gráfica de posición-tiempo para un movimiento con velocidad constante es una línea recta con pendiente positiva. En este caso, la pendiente de la línea sería igual a la velocidad (25 m/s). La línea comenzaría en el origen (0,0) y se extendería hacia arriba a medida que el tiempo avanza, indicando que la posición del cuerpo aumenta de manera lineal con el tiempo. Por ejemplo, después de 1 segundo, la posición sería 25 m; después de 2 segundos, sería 50 m; y así sucesivamente.
+                La gráfica de posición-tiempo para un movimiento con velocidad constante es una línea recta con pendiente positiva. En este caso, la pendiente de la línea sería igual a la velocidad (25 m/s). La línea comenzaría en el origen (0,0) y se extendería hacia arriba a medida que el tiempo avanza, indicando que la posición del cuerpo aumenta de manera lineal con el tiempo. Por ejemplo, después de 1 segundo, la posición sería 25 m; después de 2 segundos, sería 50 m; y así sucesivamente. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_9_st.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'>
             </div>
              ` 
         },
         {
             titulo: "Problema 10: Cálculo de distancia recorrida con velocidad constante",
-            enunciado: "La representación gráfica del movimiento de un cuerpo es la que aparece en la gura. Contesta las siguientes cuestiones: <br> a) ¿Qué tipo de movimiento ha tenido en cada tramo? Razona la respuesta. <br>  b) ¿Cuál ha sido la velocidad en cada tramo? <br>  c) ¿Qué espacio ha recorrido al cabo de los 10 segundos? <br>  d) ¿Cuál ha sido el desplazamiento del móvil? <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_10.png' style='width: 20rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "La representación gráfica del movimiento de un cuerpo es la que aparece en la figura. Contesta las siguientes cuestiones: <br> a) ¿Qué tipo de movimiento ha tenido en cada tramo? Razona la respuesta. <br>  b) ¿Cuál ha sido la velocidad en cada tramo? <br>  c) ¿Qué espacio ha recorrido al cabo de los 10 segundos? <br>  d) ¿Cuál ha sido el desplazamiento del móvil? <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_10.png' style='width: 20rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: ` <div class='paso'>
                 <strong>a) Tipo de movimiento en cada tramo:</strong><br>
-                En el primer tramo (0 a 4 segundos), el cuerpo se mueve a una velocidad constante, lo que indica un Movimiento Rectilíneo Uniforme (MRU). En el segundo tramo (4 a 7 segundos), el cuerpo se detiene, lo que también es un MRU pero con velocidad cero. En el tercer tramo (7 a 10 segundos), el cuerpo se mueve nuevamente a una velocidad constante pero en dirección opuesta, lo que también es un MRU.
+                En una gráfica de posición frente a tiempo, las líneas rectas indican que la velocidad es constante. Por lo tanto: <br> Tramo 1 (0 a 2 s): MRU (Movimiento Rectilíneo Uniforme). La posición aumenta de forma constante, lo que indica una velocidad positiva. <br> Tramo 2 (2 a 3 s): MRU. La posición disminuye de forma constante, lo que indica que el móvil está regresando (velocidad negativa). <br> Tramo 3 (3 a 5 s): Reposo. La posición se mantiene constante en 20 m. El objeto no se mueve. <br> Tramo 4 (5 a 10 s): MRU. La posición disminuye constantemente hasta llegar al origen (0 m).
             </div>
             <div class='paso'>
                 <strong>b) Velocidad en cada tramo:</strong><br>
-                En el primer tramo, la velocidad es positiva y constante. En el segundo tramo, la velocidad es cero. En el tercer tramo, la velocidad es negativa y constante.
+                Para calcular la velocidad, usamos la fórmula de la velocidad:  \\( \\\ v = \\frac{x_f - x_0}{t_f - t_0} \\) <br> Donde \\(x_f\\) es la posición final, \\(x_0\\) es la posición inicial, \\(t_f\\) es el tiempo final y \\(t_0\\) es el tiempo inicial. Aplicando esta fórmula a cada tramo: <br>
+                Tramo 1: \\( \\\ v_1 = \\frac{30 - 0}{2 - 0} = 15 \\, \\text{m/s} \\) <br> Tramo 2: \\( \\\ v_2 = \\frac{20 - 30}{3 - 2} = - 10 \\, \\text{m/s} \\) <br> Tramo 3: \\( \\\ v_3 = \\frac{20 - 20}{5 - 3} = 0 \\, \\text{m/s} \\) <br> Tramo 4: \\( \\\ v_4 = \\frac{0 - 20}{10 - 5} = - 4 \\, \\text{m/s} \\)
             </div>
             <div class='paso'>
                 <strong>c) Espacio recorrido al cabo de los 10 segundos:</strong><br>
-                El espacio recorrido es la suma de las distancias absolutas recorridas en cada tramo. En el primer tramo, el cuerpo recorre una distancia positiva. En el segundo tramo, no se recorre ninguna distancia. En el tercer tramo, el cuerpo recorre una distancia negativa (en dirección opuesta). La distancia total recorrida sería la suma de las distancias absolutas de cada tramo.
+                El espacio recorrido (x) es la suma de todas las distancias "caminadas", sin importar la dirección (siempre en valor absoluto): <br>
+                En el Tramo 1: recorre |30 - 0| = 30 m <br>
+                En el Tramo 2: recorre |20 - 30| = 10 m <br>
+                En el Tramo 3: recorre |20 - 20| = 0 m <br>
+                En el Tramo 4: recorre |0 - 20| = 20 m <br>
+                Total espacio recorrido: 30 + 10 + 0 + 20 = 60 metros. <br> <span class='resultado'>Resultado: &nbsp; El espacio recorrido al cabo de los 10 segundos es de 60 metros.</span>
             </div>
             <div class='paso'>
                 <strong>d) Desplazamiento del móvil:</strong><br>
@@ -423,15 +430,31 @@ const baseDatosProblemas = {
             enunciado: "A partir de la gráfica calcula: <br> a) La aceleración. <br> b) La velocidad al cabo de 8 s. <br> c) La distancia recorrida a los 8 s. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha3_10.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: ` <div class='paso'>
                 <strong>a) Cálculo de la aceleración:</strong><br>
-                Para calcular la aceleración, necesitamos conocer los valores de velocidad en diferentes momentos del tiempo. Sin esta información, no podemos calcular la aceleración con precisión. Sin embargo, si tuviéramos los valores de velocidad en diferentes momentos, podríamos utilizar la fórmula de la aceleración: \\(a = \\frac{v_f - v_0}{t}\\) para calcular la aceleración.
+                La aceleración es la pendiente de la recta en una gráfica v-t. Podemos calcularla usando dos puntos de la gráfica: <br>
+                Punto inicial: &nbsp (\\( t_0 = 0 \\\ s, v_0 = 50 \\\ m/s \\)) <br> 
+                Punto final (donde corta el eje x): &nbsp (\\( t_f = 10 \\\ s, v_f = 0 \\\ m/s \\)) <br>
+                Utilizamos la fórmula: 
+                \\[ a = \\frac {v_f-v_0}{t_f - t_0} \\]
+                \\[ a = \\frac {0 \\\ m/s -  50 \\\ m/s}{10 \\\ s - 0 \\\ s} = - 5 \\text{ m/s}^2 \\]
+                Nota: El signo negativo indica que el cuerpo está desacelerando (frenando). <br> <span class='resultado'>Resultado: &nbsp La aceleración es de - 5 m/s².</span>
             </div>
             <div class='paso'>
                 <strong>b) Cálculo de la velocidad al cabo de 8 segundos:</strong><br>
-                Para calcular la velocidad al cabo de 8 segundos, necesitaríamos conocer la aceleración y la velocidad inicial. Sin esta información, no podemos calcular la velocidad con precisión. Sin embargo, si tuviéramos estos datos, podríamos utilizar la fórmula de la velocidad en movimiento uniformemente acelerado: \\(v = v_0 + a \\cdot t\\) para calcular la velocidad al cabo de 8 segundos.
+                Utilizamos la ecuación de la velocidad para un MRUA: &nbsp \\(v = v_0 + a \\cdot t\\). <br> Sustituyendo los valores conocidos (\\(v_0 = 50 \\\ m/s, a = -5 \\\ m/s^2, t = 8 \\\ s\\)):
+                \\[ v = 50 + (-5) \\cdot 8 \\]
+                \\[ v = 50 - 40 = 10 \\text{ m/s} \\]
+            <span class='resultado'>Resultado: &nbsp A los 8 segundos, la velocidad es de 10 m/s.</span>
             </div>
             <div class='paso'>
                 <strong>c) Cálculo de la distancia recorrida a los 8 segundos:</strong><br>
-                Para calcular la distancia recorrida a los 8 segundos, necesitaríamos conocer la aceleración, la velocidad inicial y el tiempo. Sin esta información, no podemos calcular la distancia con precisión. Sin embargo, si tuviéramos estos datos, podríamos utilizar la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\) para calcular la distancia recorrida a los 8 segundos.   
+                Utilizamos la fórmula cinemática de la posición para un MRUA:
+                \\[ x = x_0 + v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2 \\]
+                Sustituimos los valores:
+                \\[ x = 0 + (50 \\cdot 8) + \\frac{1}{2} \\cdot (-5) \\cdot (8)^2 \\]
+                \\[ x = 400 + \\frac{1}{2} \\cdot (-5) \\cdot 64 \\]
+                \\[ x = 400 - 160 = 240 \\text{ m} \\]
+                <span class='resultado'>Resultado: &nbsp La distancia recorrida a los 8 segundos es de 240 metros.</span>
+            </div>
         `
         }    
 
