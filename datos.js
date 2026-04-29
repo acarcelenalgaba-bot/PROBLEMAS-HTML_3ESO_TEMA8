@@ -241,7 +241,9 @@ const baseDatosProblemas = {
             </div>
             <div class='paso'>
                 <strong>d) Desplazamiento del móvil:</strong><br>
-                El desplazamiento es la diferencia entre la posición final y la posición inicial del móvil. En este caso, el desplazamiento sería la posición final después de los 10 segundos menos la posición inicial al inicio del movimiento. Dado que el móvil se mueve en dirección opuesta en el tercer tramo, el desplazamiento podría ser menor que el espacio recorrido total.
+                A diferencia del espacio, el desplazamiento (Δx) solo mira dónde empezó y dónde terminó: <br> Δx = x <sub>final</sub> - x<sub>inicial</sub> <br>
+                Como el móvil empezó en la posición 0 m y terminó en la posición 0 m (al cabo de 10 segundos vuelve al origen): <br>
+                Δx = 0 - 0 = 0 metros <br> Es decir, ¡se dio una buena caminata para acabar exactamente en el mismo sitio! <br> <span class='resultado'>Resultado: &nbsp; El desplazamiento del móvil es de 0 metros.</span>
             </div> 
         
             ` 
@@ -255,7 +257,7 @@ const baseDatosProblemas = {
                 Velocidad (\\(v\\)) = 90 km/h <br>
                 Tiempo (\\(t\\)) = 10 s <br>
                 <strong>1. Cálculo de la distancia recorrida:</strong><br>
-                Primero, convertimos la velocidad de km/h a m/s: \\(90 \\text{ km/h} = 25 \\text{ m/s}\\). Luego, utilizamos la fórmula de la velocidad: \\(v = \\frac{d}{t}\\). Despejamos la distancia: \\[d = v \\cdot t = 25 \\text{ m/s} \\cdot 10 \\text{ s} = 250 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp El guepardo ha recorrido 250 metros.</span>
+                Primero, convertimos la velocidad de km/h a m/s: \\[ \\mathrm{ 90 \\\ \\frac {km}{h} \\cdot \\frac{1000 \\\ m}{1 \\\ km} \\cdot \\frac{1 \\\ h}{3600 \\\ s} = 25 \\\ m/s}\\] <br> Luego, utilizamos la fórmula de la velocidad: \\[\\mathrm{ v = \\frac{x}{t}}\\] Despejamos la distancia: \\[\\mathrm{x = v \\cdot t = 25 \\\ m/s \\cdot 10 \\\ s = 250 \\\ m}\\]<br> <span class='resultado'>Resultado: &nbsp El guepardo ha recorrido 250 metros.</span>
             </div>
 
             ` 
