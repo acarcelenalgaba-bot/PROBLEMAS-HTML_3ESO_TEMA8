@@ -418,13 +418,13 @@ const baseDatosProblemas = {
         },
         {
             titulo: "Problema 9: Conductor de una motocicleta con aceleración constante",
-            enunciado: "El conductor de una motocicleta se encuentra un semáforo en rojo. Previamente ha empezado a reducir su velocidad con a = - 5 m/s<sup>2</sup>. Calcula la distancia que recorrerá la motocicleta hasta pararse si la velocidad inicial es de 54 km/h.",
+            enunciado: "El conductor de una motocicleta se encuentra un semáforo en rojo. Previamente ha empezado a reducir su velocidad con a = &minus; 5 m/s<sup>2</sup>. Calcula la distancia que recorrerá la motocicleta hasta pararse si la velocidad inicial es de 54 km/h.",
             solucion: ` <div class='paso'>
                 <strong>Datos:</strong> <br>
-                Velocidad inicial (\\(v_0\\)) = 54 km/h = 15 m/s <br>
-                Aceleración (\\(a\\)) = -5 m/s² <br>
+                Velocidad inicial (\\(v_0\\)) = 54 km/h \\(\\cdot \\frac{1000 \\, \\text{m}}{1 \\, \\text{km}} \\cdot \\frac{1 \\, \\text{h}}{3600 \\, \\text{s}}= 15 \\) m/s <br>
+                Aceleración (\\(a\\)) = &minus; 5 m/s² <br>
                 <strong>Cálculo de la distancia recorrida hasta pararse:</strong><br>
-                Utilizamos la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\(x = x_0 + v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\) <br> Primero, calculamos el tiempo que tarda en detenerse utilizando la fórmula de la velocidad: \\(v = v_0 + a \\cdot t\\) <br> Despejamos el tiempo para cuando la velocidad final (\\(v\\)) es cero: \\[0 = 15 + (-5) \\cdot t \\Rightarrow t = \\frac{15}{5} = 3 \\text{ s}\\] Luego, sustituimos el tiempo en la fórmula del espacio recorrido: \\[x = 0 + 15 \\cdot 3 + \\frac{1}{2} \\cdot (-5) \\cdot (3)^2 = 45 - 22,5 = 22,5 \\text{ m}\\]<br> <span class='resultado'>Resultado: &nbsp La motocicleta recorrerá una distancia de 22,5 metros hasta pararse.</span>
+                Primero, calculamos el tiempo que tarda en detenerse utilizando la fórmula de la velocidad: \\[v = v_0 + a \\cdot t\\] Despejamos el tiempo para cuando la velocidad final (\\(v\\)) es cero: \\[0 = 15 + (-5) \\cdot t \\Rightarrow t = \\frac{15}{5} = 3 \\text{ s}\\] Luego, sustituimos el tiempo en la fórmula del espacio recorrido en movimiento uniformemente acelerado: \\[x = x_0 + v_0 \\cdot t + \\frac{1}{2} \\cdot a \\cdot t^2\\] \\[x = 0 + 15 \\cdot 3 + \\frac{1}{2} \\cdot (-5) \\cdot (3)^2 = 45 - 22,5 = 22,5 \\text{ m}\\]<br> <span class='resultado'>Resultado: &nbsp La motocicleta recorrerá una distancia de 22,5 metros hasta pararse.</span>
             </div>
         `
         },
